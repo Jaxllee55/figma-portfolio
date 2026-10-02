@@ -1,236 +1,126 @@
-* {
-    box-sizing: border-box;
-    
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  font-size: 12px;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(212, 207, 207);
-    padding: 20px;
-    margin: 40px;
-    
-}
-.container{
-    border: 2px white;
-    margin: 0px;
-    padding: 0;
-    background-color: white;
-    
+#resume {
+  color: white;
+  background-color: #ff6464;
+  padding: 12px;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 16px;
+  width: fit-content;
 }
 
-nav{
-    display: flex;
-    justify-content: end;
-    
+#profile-image {
+  width: 243px;
+  height: 243px;
 }
 
-ul{
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 10px 20px ;
-
-}
-a{
-  text-decoration: none;
-  color: black;
-}
-.but{
-    color: white;
+header > section .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-size: 12px;
+  margin: 96px auto;
 }
 
-.personal-details{
-    font-size: 16px;
+aside {
+  background-color: #edf7fa;
+  padding: 40px 0;
 }
 
-.hero-section{
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 60px;
-    font-size: 12px;
-    padding-left: 60px;
-    
-}
-#profile-image{
-    width: 220px;
-    padding-right: 60px;
+aside > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-button{
-    background-color: rgb(221, 90, 20);
-    color: white;
+aside > .container > nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
-.content{
-    background-color: rgb(208, 228, 228);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 20px;
+aside > .container > nav > h2 {
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.recent{
-    display: flex;
-    justify-content: center;
-    gap: 470px;
-    font-size:12px;
+aside > .container > nav > a {
+  color: #00a8cc;
 }
 
-.left-right{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 12px;
-   
+.posts {
+  display: flex;
+  gap: 20px;
 }
 
-.card1{
-    background-color: white;
-    padding: 1px;
-    padding-right: 20px;
-    padding-left: 10px;
-    
+.post {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.card2{
-    background-color: white;
-    padding: 1px;
-    padding-right: 20px;
-    padding-left: 10px;
+.post > h3 {
+  font-size: 26px;
 }
 
-.featured-works{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    
+.works {
+  padding: 40px 0;
 }
 
-.featured{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 60px;
-    font-size: 12px;
-    
+.works > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.Designing-Dashboards{
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 40px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
+.works > .container > h2 {
+  font-size: 22px;
+  font-weight: 400;
 }
 
-.dashboard-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-.Dashboard-text{
-    opacity:0.5;
+.work {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: #c7c6c6 1px solid;
 }
 
-.left-section01{
-    padding-top: 18px;
-    
-}
-.dashboard-2020{
-    display: flex;
-    gap: 20px;
+.work > .details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-
-.Vibrant-Portraits{
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 40px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
+.work > .details > h3 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.Portrait-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+.work > .details > .details-extra {
+  display: flex;
+  gap: 10px;
 }
 
-.Illustration-text{
-    opacity: 0.5;
+.work > .details > .details-extra > .date {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #142850;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
 }
 
-.left-section02{
-    padding-top: 18px;
-    padding-left: 1px ;
-    
-}
-.portrait-2018{
-    display: flex;
-    gap: 20px;
-}
-
-.Malayalam-type{
-    display: flex;
-    justify-content: center;
-    padding-right: 65px;
-    padding-left: 1px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
-}
-
-.Malayalam-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-.Typography-text{
-    opacity: 0.5;
-}
-
-.left-section03{
-    padding-top: 18px;
-    padding-left: 1px ;
-    
-}
-.Malayalam-2018{
-    display: flex;
-    gap: 20px;
-}
-
-
-.social-icons{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.footer-text{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-size: 10px;
-   
+.work > .details > .details-extra > .extra {
+  color: #8695a4;
+  font-size: 20px;
 }

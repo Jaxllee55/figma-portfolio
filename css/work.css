@@ -1,198 +1,75 @@
-*{
-
-    box-sizing: border-box;
-}
-body{++++++++++++++++
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(203, 197, 197);
-    color: #21243d;
-    padding: 20px;
-    margin: 40PX;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.container{
-    border: 2px white;
-    margin: 0px;
-    padding: 0px;
-    background-color: white;
-}
-header{
-    padding: 30px 60px;
-}
-nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-}
-nav{
-    text-decoration: none;
-    color: #21243d;
-    font-weight: bold;
-
-}
-nav .active{
-color: #ff6464;
-}
-.featured-works{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    
+.posts {
+  display: flex;
+  gap: 20px;
 }
 
-.featured{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 60px;
-    font-size: 12px;
-    
+.post {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.Designing-Dashboards{
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 40px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
+.post > h3 {
+  font-size: 26px;
 }
 
-.dashboard-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-.Dashboard-text{
-    opacity:0.5;
+.works {
+  padding: 40px 0;
 }
 
-.left-section01{
-    padding-top: 18px;
-    
-}
-.dashboard-2020{
-    display: flex;
-    gap: 20px;
+.works > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-
-.Vibrant-Portraits{
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 40px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
+.works > .container > h2 {
+  font-size: 22px;
+  font-weight: 400;
 }
 
-.Portrait-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+.work {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: #c7c6c6 1px solid;
 }
 
-.Illustration-text{
-    opacity: 0.5;
+.work > .details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.left-section02{
-    padding-top: 18px;
-    padding-left: 1px ;
-    
-}
-.portrait-2018{
-    display: flex;
-    gap: 20px;
+.work > .details > h3 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.Malayalam-type{
-    display: flex;
-    justify-content: center;
-    padding-right: 65px;
-    padding-left: 1px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
+.work > .details > .details-extra {
+  display: flex;
+  gap: 10px;
 }
 
-.Malayalam-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+.work > .details > .details-extra > .date {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #142850;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
 }
 
-.Typography-text{
-    opacity: 0.5;
-}
-
-.left-section03{
-    padding-top: 18px;
-    padding-left: 1px ;
-    
-}
-.Malayalam-2018{
-    display: flex;
-    gap: 20px;
-}
-
-.component{
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    padding-left: 40px;
-    padding-top: 1px;
-    gap: 10px;
-    font-size: 12px;
-}
-
-.component-year{
-    background-color: rgb(21, 21, 56);
-    font-size: 12px;
-    color: white;
-    padding: 2px 4px 2px 4px;
-    border-radius: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
-.component-text{
-    opacity: 0.5;
-}
-
-.left-section04{
-    padding-top: 18px;
-    padding-right: 40px ;
-    
-}
-.component-2018{
-    display: flex;
-    gap: 20px;
-}
-
-footer{
-    text-align: center;
-    font-size: 11px;
-    color: #555;
-
-}
-
-.social-icons{
-    display: flex;
-    justify-content:end;
-    
+.work > .details > .details-extra > .extra {
+  color: #8695a4;
+  font-size: 20px;
 }
